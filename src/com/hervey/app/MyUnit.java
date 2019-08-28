@@ -2,7 +2,9 @@ package com.hervey.app;
 
 public class MyUnit {
 
-    public String concatenate(String one, String two){
+    private Object MyUnit;
+
+	public String concatenate(String one, String two){
         return one + two;
     }
     
@@ -17,11 +19,17 @@ public class MyUnit {
     	return false;
     }
     
+    public Object getTheObject() {
+    	Object nothing = MyUnit;
+    	return nothing;
+    }
     
     
     
-    
-    
+    public Object getTheSameObject() {
+    	Object nothing = MyUnit;
+    	return nothing;
+    }
     
     
     

@@ -30,7 +30,7 @@ public class MyUnitTest {
         String[] resultArray =  myUnit.getTheStringArray();// over in myUnit the array is set to {"one", "two", "three"}, but can be changed to obtain a failure
 
         assertArrayEquals(expectedArray, resultArray);
-        System.out.println("this won't print of failure results from assesrtArrayEquals");
+        System.out.println("this won't print if failure results from assesrtArrayEquals");
         
     }
     
@@ -43,6 +43,26 @@ public class MyUnitTest {
         assertFalse(myUnit.getTheBoolean());
     }
     
+    @Test
+    public void testGetTheObject() {
+        MyUnit myUnit = new MyUnit();
+
+        assertNull(myUnit.getTheObject());
+
+        assertNotNull(myUnit.getTheObject());  //produces failure
+    }
+    
+    
+    @Test
+    public void testGetTheSameObject() {
+        MyUnit myUnit = new MyUnit();
+
+        assertSame   (myUnit.getTheSameObject(),
+                      myUnit.getTheSameObject());
+        
+        assertNotSame(myUnit.getTheSameObject(),
+                      myUnit.getTheSameObject()); //returns failure because clearly they are the same object
+    }
     
     
     
