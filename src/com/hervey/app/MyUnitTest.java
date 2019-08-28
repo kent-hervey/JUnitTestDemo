@@ -34,6 +34,15 @@ public class MyUnitTest {
         
     }
     
+    @Test
+    public void testGetTheBoolean() {
+        MyUnit myUnit = new MyUnit();
+
+        assertTrue (myUnit.getTheBoolean());  //this shows failure because over in MyUnit the return is set to false
+
+        assertFalse(myUnit.getTheBoolean());
+    }
+    
     
     
     

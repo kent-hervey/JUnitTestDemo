@@ -13,7 +13,9 @@ public class MyUnit {
     }
     
     
-    
+    public Boolean getTheBoolean() {
+    	return false;
+    }
     
     
     
