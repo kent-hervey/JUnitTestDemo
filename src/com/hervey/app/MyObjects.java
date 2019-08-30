@@ -1,8 +1,8 @@
 package com.hervey.app;
 
-public class MyUnit {
+public class MyObjects {
 
-	private Object MyUnit;
+	private Object MyUnit = null;
 
 	public String concatenate(String one, String two) {
 		return one + two;
