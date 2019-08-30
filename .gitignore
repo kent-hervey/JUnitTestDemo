@@ -88,3 +88,5 @@ bin/
 
 bin/com/hervey/app/MyUnit.class
 bin/com/hervey/app/MyUnitTest.class
+.vscode/settings.json
+*settings.json
